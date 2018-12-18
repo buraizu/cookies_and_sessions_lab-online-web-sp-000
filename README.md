@@ -8,6 +8,11 @@ We're going to make a very simple shopping cart, stored entirely in the session.
 
 The Rails `session` method gives us access to the Rails session. The session is a datastore implemented with cookies. You can store simple data structures in the session. ActiveRecord models, no. Arrays of strings or numbers, yes. Basically, stick to data literals—numbers, strings, hashes, and arrays.
 
+<!-- <%= form_tag({controller: "products", action: "add"}, method: "post") do %>
+  <%= text_field_tag(:session[:cart]) %>
+  <%= submit_tag("add to cart") %>
+<% end %> -->
+
 We're going to use this to implement a shopping site. Here's how the site will work:
 
   1. The root page of the app has an input box on it (within a form of course).
