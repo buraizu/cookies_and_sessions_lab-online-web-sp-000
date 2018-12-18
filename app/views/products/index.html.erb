@@ -6,6 +6,6 @@
   <%= submit_tag("add to cart") %>
 <% end %>
 
-<%= if @products.each do |p| %>
+<%= @products.each do |p| %>
   <p><%= p %></p>
 <% end %>
