@@ -13,7 +13,8 @@ end
 
 # {"utf8"=>"✓",
 #  "authenticity_token"=>
-#   "NiolKXZpaQkJ202ktLXk/hNtTsiLYNgQPYs5O7JAdP3Aw3bonn49y02LQgbWc/gC8mq9JlE96icqUqm12pPymw==",
+#   "KSY/mTJG1d2ceJdf2WoHhtEsJe/iBBuhFha4oSbf8bPfz2xY2lGBH9gomP27rBt6MCvWAThZKZYBzygvTgx31Q==",
+#  "cart"=>"weed",
 #  "commit"=>"add to cart",
 #  "controller"=>"products",
 #  "action"=>"add"}
