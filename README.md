@@ -13,6 +13,12 @@ The Rails `session` method gives us access to the Rails session. The session is 
   <%= submit_tag("add to cart") %>
 <% end %> -->
 
+<!-- <% if @products %>
+  <%=  @products.each do |p| %>
+    <p><%= p %></p>
+  <% end %>
+<% end %> -->
+
 We're going to use this to implement a shopping site. Here's how the site will work:
 
   1. The root page of the app has an input box on it (within a form of course).
