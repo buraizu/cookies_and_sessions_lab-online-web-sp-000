@@ -1,13 +1,14 @@
 class ProductsController < ApplicationController
 
   def index
-
+    if session[:cart].size > 0
+      @products = session[:cart].collect {|p| p }
+    end
   end
 
   def add
     product = params[:cart]
     session[:cart] << product
-    binding.pry
     redirect_to "/"
   end
 
