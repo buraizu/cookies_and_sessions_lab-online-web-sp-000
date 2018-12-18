@@ -1,5 +1,6 @@
 <h1>Whoa</h1>
 
-<%= form_tag text_field %>
+<%= form_tag ("/", method: "post") do %>
 
-<%= form_submit %>
+  <%= submit_tag %>
+<% end %>
