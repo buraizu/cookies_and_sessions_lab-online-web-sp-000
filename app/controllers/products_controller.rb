@@ -8,8 +8,8 @@ class ProductsController < ApplicationController
   end
 
   def add
-    product = params[:cart]
-    session[:cart] << product
+    product = params[:product]
+    session[:product] << product
     redirect_to "/"
   end
 
