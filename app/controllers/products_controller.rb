@@ -5,12 +5,9 @@ class ProductsController < ApplicationController
   end
 
   def add
-
     product = params[:product]
     session[:product] << product
     redirect_to "/"
   end
 
 end
-
-
