@@ -5,6 +5,7 @@ class ProductsController < ApplicationController
   end
 
   def add
+    binding.pry
     redirect_to "/"
   end
 
