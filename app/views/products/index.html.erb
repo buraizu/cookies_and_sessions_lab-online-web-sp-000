@@ -2,7 +2,7 @@
 
 <%= form_tag({controller: "products", action: "add"}, method: "post") do %>
   <%= label_tag(cart) %>
-  <%= text_field_tag(:cart) %>
+  <%= text_field_tag(:product) %>
   <%= submit_tag("add to cart") %>
 <% end %>
 
