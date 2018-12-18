@@ -1,14 +1,11 @@
 class ProductsController < ApplicationController
 
   def index
-
-    if session[:product] && session[:product].size > 0
-      @products = session[:cart].collect {|p| p }
-    end
+    @products = cart
   end
 
   def add
-    binding.pry
+
     product = params[:product]
     session[:product] << product
     redirect_to "/"
@@ -16,10 +13,10 @@ class ProductsController < ApplicationController
 
 end
 
-# {"utf8"=>"✓",
-#  "authenticity_token"=>
-#   "KSY/mTJG1d2ceJdf2WoHhtEsJe/iBBuhFha4oSbf8bPfz2xY2lGBH9gomP27rBt6MCvWAThZKZYBzygvTgx31Q==",
-#  "cart"=>"weed",
-#  "commit"=>"add to cart",
-#  "controller"=>"products",
-#  "action"=>"add"}
+{"utf8"=>"✓",
+ "authenticity_token"=>
+  "eimmU3mvRe63TP2/HYLBpDIUXrHOiDoUEky9WOycPAWMwPWSkbgRLPMc8h1/RN1Y0xOtXxTVCCMFlS3WhE+6Yw==",
+ "product"=>"marijuana",
+ "commit"=>"add to cart",
+ "controller"=>"products",
+ "action"=>"add"}
