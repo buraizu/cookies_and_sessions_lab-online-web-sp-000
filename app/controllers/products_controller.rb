@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
   end
 
   def add
+    binding.pry
     product = params[:product]
     session[:product] << product
     redirect_to "/"
