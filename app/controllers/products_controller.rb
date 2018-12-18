@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
 
   def index
+    cart
     if session[:cart].size > 0
       @products = session[:cart].collect {|p| p }
     end
