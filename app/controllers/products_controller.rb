@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
   end
 
   def add
-    redirect_to "root"
+    redirect_to "/products/index"
   end
 
 end
