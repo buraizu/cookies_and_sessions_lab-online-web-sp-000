@@ -1,5 +1,7 @@
 <h1>Whoa</h1>
 
 <%= form_tag({controller: "products", action: "add"}, method: "post") do %>
+  <%= label_tag(cart) %>
   <%= text_field_tag(cart) %>
+  <%= submit_tag("add to cart")
 <% end %>
